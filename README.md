@@ -18,9 +18,13 @@ To use this application follow these steps:
 
 - Make sure you are in the "Develop" folder
 
--
+- In the command line type "npm install inquirer"
 
-				
+- After the install is complete type "node index" to start the application
+
+- After it is finished your README will be ready in the "Dist" folder named "README.md"
+
+- Note: if you just want to use test data type "node index test" to create an example file :bowtie:				
 
 **Usage**: This was used for testing methods learned from the previous week.
 
