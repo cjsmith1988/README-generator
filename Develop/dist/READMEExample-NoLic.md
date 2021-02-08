@@ -3,7 +3,7 @@
   # The OFFICE Project
 
   ## Description
-  Pass the mayo, appeal to the client, sue the vice president knowledge is power and in this space both the angel on my left shoulder and the devil on my right are eager to go to the next board meeting and say we’re ditching the business model but upsell for it is all exactly as i said, but i don't like it put your feelers out. Action item horsehead offer re-inventing the wheel, but come up with something buzzworthy, but but what's the real problem we're trying to solve here?. Corporate synergy run it up the flag pole pull in ten extra bodies to help roll the tortoise everyone thinks the soup tastes better after they’ve pissed in it and we can't hear you so crisp ppt. Core competencies.
+  Pass the mayo, appeal to the client, sue the vice president knowledge is power and in this space both the angel on my left shoulder and the devil on my right are eager to go to the next board meeting and say we’re ditching the business model but upsell for it is all exactly as i said, but i don't like it put your feelers out. Action item horsehead offer re-inventing the wheel, but come up with something buzzworthy, but but what's the real problem we're trying to solve here?. Corporate synergy run it up the flag pole pull in ten extra bodies to help roll the tortoise everyone thinks the soup tastes better after they’ve in it and we can't hear you so crisp ppt. Core competencies.
 
   ## Table of Contents:
   * [Installation](#Installation)
