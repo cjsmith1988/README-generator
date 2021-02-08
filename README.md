@@ -1,4 +1,4 @@
-[![License: MIT License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)";
+[![License: MIT License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
  
 **Project name**: Professional README Generator Challenge
 
@@ -8,10 +8,18 @@
 
 **Installation**: 	
 
-access Github repository here: https://github.com/cjsmith1988/weather-dashboard
+access Github repository here: https://github.com/cjsmith1988/README-generator
 
+To use this application follow these steps:
 
-access Application URL here: https://cjsmith1988.github.io/weather-dashboard/
+- Clone repository
+
+- Open command line with node.js installed
+
+- Make sure you are in the "Develop" folder
+
+-
+
 				
 
 **Usage**: This was used for testing methods learned from the previous week.
