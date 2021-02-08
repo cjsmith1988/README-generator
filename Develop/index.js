@@ -5,6 +5,7 @@ const testInfo = require('./utils/testInfo');
 //const generatePage = require('./src/page-template');
 const generateMarkdown = require('./utils/generateMarkdown');
 //ability to use test data
+
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 
 // TODO: Create an array of questions for user input
@@ -153,9 +154,11 @@ const writeToFile = fileContent => {
 // TODO: Create a function to initialize app
 function init() {
     //able to create the README with test data by typing 'node index Test'
-    if (profileDataArgs[0].toLowerCase() == "test"){
-        writeToFile(generateMarkdown(testInfo));
-        console.log('ReadMe has been Created');
+    if (profileDataArgs[0]){
+        if (profileDataArgs[0].toLowerCase() == "test"){
+            writeToFile(generateMarkdown(testInfo));
+            console.log('ReadMe has been Created');
+        }
     } else {
         promptUser().then(data => {
         return generateMarkdown(data);

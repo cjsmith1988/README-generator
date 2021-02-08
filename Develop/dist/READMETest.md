@@ -1,5 +1,5 @@
 
-  
+  [![License: Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://choosealicense.com/licenses/apache-2.0/)
   # The OFFICE Project
 
   ## Description
@@ -19,8 +19,11 @@
   ## Usage
   We need to socialize the comms with the wider stakeholder community both the angel on my left shoulder and the devil on my right are eager to go to the next board meeting and say we’re ditching the business model or that is a good problem to have, exposing new ways to evolve our design language.
 
+  
   ## License
-  MIT License
+  This project has been assigned a Apache License 2.0. For more informaiton on this license please click the badge below:
+  [![License: Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://choosealicense.com/licenses/apache-2.0/)
+  
 
   ## Contributions
   View my GitHub profile: [here](https://www.github.com/dschrute)
@@ -31,5 +34,5 @@
   To test this project please follow thest steps: step 1, step 2.
 
   ## Questions
-  If you have any further questions regarding this project please email: [Dwight.schrute@dundermifflin.com](mailto:Dwight.schrute@dundermifflin.com?subject=[Question]%20The%20OFFICE Project).
+  If you have any further questions regarding this project please email: [Dwight.schrute@dundermifflin.com](mailto:Dwight.schrute@dundermifflin.com?subject=[Question]%20The%20OFFICE%20Project).
 

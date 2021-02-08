@@ -6,7 +6,7 @@ const testInfo = {
     installation: 'Organic growth come up with something buzzworthy knowledge process outsourcing and code. Peel the onion guerrilla marketing. Vertical integration how much bandwidth do you have meeting assassin, yet low engagement yet into the weeds, but after I ran into Helen at a restaurant, I realized she was just office pretty, and in an ideal world. In this space. Data-point drive awareness to increase engagement.',
     usage: 'We need to socialize the comms with the wider stakeholder community both the angel on my left shoulder and the devil on my right are eager to go to the next board meeting and say we’re ditching the business model or that is a good problem to have, exposing new ways to evolve our design language.',
     confirmLicense: true,
-    license: 'MIT License',
+    license: 'Apache License 2.0',
     contribute: 'If you want to contribute please see the issues tab',
     test: 'To test this project please follow thest steps: step 1, step 2.'
 };
