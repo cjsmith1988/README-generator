@@ -1,7 +1,11 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
+const testInfo = require('./utils/testInfo');
 //const generatePage = require('./src/page-template');
-const { writeFile, copyFile } = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
+//ability to use test data
+const profileDataArgs = process.argv.slice(2, process.argv.length);
 
 // TODO: Create an array of questions for user input
 const promptUser = () => {
@@ -10,7 +14,6 @@ console.log(`
 Welcome to The README Generator. Lets get Started!
 ==================================================
 `);
-const questions = [];
 return inquirer.prompt([
     {
         type: 'input',
@@ -133,16 +136,36 @@ return inquirer.prompt([
 };
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
+const writeToFile = fileContent => {
+    return new Promise((resolve, reject) => {
+      fs.writeFile('./dist/READMETest.md', fileContent, err => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve({
+          ok: true,
+          message: 'File created!'
+        });
+      });
+    });
+};
 // TODO: Create a function to initialize app
 function init() {
-    promptUser().then(data => {
-        console.log(data);
-      })
-}
-
+    //able to create the README with test data by typing 'node index Test'
+    if (profileDataArgs[0].toLowerCase() == "test"){
+        writeToFile(generateMarkdown(testInfo));
+        console.log('ReadMe has been Created');
+    } else {
+        promptUser().then(data => {
+        return generateMarkdown(data);
+        })
+        .then(markDown => {
+            return writeToFile(markDown);
+        })
+        console.log('File Created');
+    };
+};
+       
 // Function call to initialize app
 init();
-
-
