@@ -71,4 +71,4 @@ THEN I am taken to the corresponding section of the README
 
 
 
-![Alt_Text](https://github.com/cjsmith1988/weather-dashboard/blob/main/WeatherDashboardScreenGrab.PNG?raw=true)
+![Generated README](https://github.com/cjsmith1988/README-generator/blob/main/generatedReadMe.png?raw=true)
