@@ -26,7 +26,7 @@ To use this application follow these steps:
 
 - Note: if you just want to use test data type "node index test" to create an example file :bowtie:
 
-video: https://youtube.com/embed/ep7B3gSUNa4
+:movie_camera: https://youtube.com/embed/ep7B3gSUNa4
 
 **Usage**: This was used for testing methods learned from the previous week.
 
