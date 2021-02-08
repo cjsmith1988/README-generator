@@ -4,7 +4,7 @@
 
 **Description**: This project purpose was to test our node.js and javescript skills.
 
-**Special Notes**: none.
+**Special Notes**: to see example generated README files go to ./Develop/dist/
 
 **Installation**: 	
 
