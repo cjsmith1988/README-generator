@@ -1,14 +1,12 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const testInfo = require('./utils/testInfo');
-//const generatePage = require('./src/page-template');
 const generateMarkdown = require('./utils/generateMarkdown');
-//ability to use test data
-
+//ability to call test data from command line
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const promptUser = () => {
 console.log(`
 ==================================================
@@ -136,10 +134,10 @@ return inquirer.prompt([
   ]);
 };
 
-// TODO: Create a function to write README file
+// function to write README file
 const writeToFile = fileContent => {
     return new Promise((resolve, reject) => {
-      fs.writeFile('./dist/READMETest.md', fileContent, err => {
+      fs.writeFile('./dist/README.md', fileContent, err => {
         if (err) {
           reject(err);
           return;
@@ -153,7 +151,7 @@ const writeToFile = fileContent => {
 };
 // TODO: Create a function to initialize app
 function init() {
-    //able to create the README with test data by typing 'node index Test'
+    //able to create the README with test data by typing 'node index Test' @ the command line
     if (profileDataArgs[0]){
         if (profileDataArgs[0].toLowerCase() == "test"){
             writeToFile(generateMarkdown(testInfo));
@@ -164,11 +162,13 @@ function init() {
         return generateMarkdown(data);
         })
         .then(markDown => {
+            console.log('File Created');
             return writeToFile(markDown);
         })
-        console.log('File Created');
+        .catch(err => {
+            console.log(err);
+          });
     };
-};
-       
+};     
 // Function call to initialize app
 init();

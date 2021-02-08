@@ -43,11 +43,18 @@ function renderLicenseSection(license, licenseBadge) {
   ${licenseBadge}
   `
 };
+//function to make the table of contents link dynamic based on if they have license or not
+function renderLicenseTCLink(confirmLicense) {
+  if (confirmLicense) {
+    return `* [License](#License)`;
+  };
+  return '';
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // destructure data ${badge}
-  const { userName, email, projectName, description, installation, usage, license, contribute, test } = data;
+  const { userName, email, projectName, description, installation, usage, confirmLicense, license, contribute, test } = data;
   let altProjName = projectName.replace(/ /g, "%20"); //remove spaces for use in mailto
   let licenseBadge = renderLicenseBadge(license);
   return `
@@ -60,7 +67,7 @@ function generateMarkdown(data) {
   ## Table of Contents:
   * [Installation](#Installation)
   * [Usage](#Usage)
-  * [License](#License)
+  ${renderLicenseTCLink(confirmLicense)}
   * [Contributing](#Contributing)
   * [Tests](#Test)
   * [Questions](#Questions)
@@ -74,16 +81,15 @@ function generateMarkdown(data) {
   ${renderLicenseSection(license, licenseBadge)}
 
   ## Contributions
-  View my: [GitHub profile](https://www.github.com/${userName})
-
   ${contribute}
 
   ## Test
   ${test}
 
   ## Questions
-  If you have any further questions regarding this project please email: [${email}](mailto:${email}?subject=[Question]%20${altProjName}).
+  View my: [GitHub profile](https://www.github.com/${userName})
 
+  If you have any further questions regarding this project please email: [${email}](mailto:${email}?subject=[Question]%20${altProjName}).
 `;
 }
 module.exports = generateMarkdown;
