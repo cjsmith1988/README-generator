@@ -70,5 +70,5 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 
-
+![command line view](https://github.com/cjsmith1988/README-generator/blob/main/bash screenGrab.PNG.png?raw=true)
 ![Generated README](https://github.com/cjsmith1988/README-generator/blob/main/generatedReadMe.png?raw=true)
