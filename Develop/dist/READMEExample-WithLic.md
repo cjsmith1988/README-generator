@@ -21,7 +21,7 @@
 
   
   ## License
-  This project has been assigned a Apache License 2.0. For more informaiton on this license please click the badge below:
+  This project has been assigned a Apache License 2.0. For more information on this license please click the badge below:
 
   [![License: Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://choosealicense.com/licenses/apache-2.0/)
   
