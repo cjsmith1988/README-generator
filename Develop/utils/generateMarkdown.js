@@ -38,7 +38,7 @@ function renderLicenseSection(license, licenseBadge) {
   };
   return `
   ## License
-  This project has been assigned a ${license}. For more informaiton on this license please click the badge below:
+  This project has been assigned a ${license}. For more information on this license please click the badge below:
 
   ${licenseBadge}
   `
